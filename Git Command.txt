@@ -1,0 +1,57 @@
+ls ===> for list all the folder/file 
+cd ===> change the directory
+cd ../ ===> back to previous directory
+mkdir hello ===> it create hello name folder
+rm .\hello\ ===> remove the hello folder
+code .  ==> open in the vs code
+pwd ===> print current directory path
+mv  ==> rename the directory
+touch index.html index.js index.css ===> for creating the multiple files
+
+//------------------------------------------------------------------------------------
+
+git init ===> initialize the git repository 
+git add . ==> all files goves into the stageing area 
+git status  ==> it show which files are in staging area and which files are in unstaging area
+git status -s  ===>  small way of above
+
+//--------------------------------------
+
+git log  ===> All show all commited message commit ID and Commit time
+git checkout 0f065924eb24ca248f9353e4d2b90984b2544f10 ===>it goes into previous version 
+git checkout master ===> goes into current branch
+
+//--------------------------------------------------------------
+
+git branch ===> to check how many Branches
+git branch about ==> create a new branch about 
+git checkout about ===> it move from master branch to the about branch
+git log --all  ===> it shows all branches commit message , commit it , date/time
+git log --all --oneline  ===> it shows all branches commit message , commit it , date/timein short
+git branch -delete contact ===> delete the branch only if we are not in that branch or not fully merged
+git branch -D about ==> it directly delete the branch befor murging even some commit are in the branch
+git merge contact ===> hmm jis bhi branch me honge waha about branch merge hogi
+
+/----------we can delete the branch after the merging that branch into the master it not affect on the commit history we still see the commit history after deleting the branch using git -D branch branch_name or git branch --delete branch_name
+
+//---------------------------------------------------------------------------------------
+
+git remote show origin ==> it show our repository online connected hee ki nahii
+
+// git pull ==> it fetch the updated data by another user on online repo. and merge with current branch
+
+
+//-----------------------------------------------------------------------------------------------------
+reverse and reset commit
+
+git reset --soft HEAD~1 ===> Removes the last commit ;Keeps your changes staged in the index
+git reset --mixed HEAD~1 ===> Removes the last commit ; Unstages the changes but keeps them in your working directory;You can modify files and commit again
+git reset --hard HEAD~1 ===> Removes the last commit ; Permanently deletes all changes from that commit ; Use only if you're sure you don't need those changes
+
+git reset --hard/--soft/--mixed  commit_id ===> removes the commit id and remove the code 
+
+
+
+node js
+
+controllers midlewhere
